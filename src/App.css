@@ -1,6 +1,10 @@
+
 .App {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -22,6 +26,54 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.black-nav{
+  display: flex;
+  background: black;
+  width: 100%;
+  color: white;
+  padding-left: 20px;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  margin:auto;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 118, 136, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 118, 136, 0.5);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 8px rgba(255, 118, 136, 0.4);
+}
+
+div {
+  box-sizing: border-box;
+}
+.list {
+  padding-left: 20px;
+  text-align: left;
+  border-bottom: 1px solid grey;
 }
 
 .App-link {
